@@ -31,7 +31,7 @@ class ProductController extends Controller
             'name' => 'required|string|max:255',
             'description' => 'required|string',
             'price' => 'required|integer',
-            'category' => 'required|in:salad,aksesoris',
+            'category' => 'required|in:makanan,aksesoris',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', // Validasi gambar
         ]);
 
@@ -69,7 +69,7 @@ class ProductController extends Controller
             'name' => 'sometimes|string|max:255',
             'description' => 'sometimes|string',
             'price' => 'sometimes|integer',
-            'category' => 'sometimes|in:salad,aksesoris',
+            'category' => 'sometimes|in:makanan,aksesoris',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', // Gambar opsional
         ]);
 

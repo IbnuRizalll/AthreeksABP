@@ -92,7 +92,7 @@ export default {
             <div class="my-form-group">
               <label>Kategori</label>
               <select id="category" class="swal2-input">
-                <option value="salad">Salad</option>
+                <option value="makanan">Makanan</option>
                 <option value="aksesoris">Aksesoris</option>
               </select>
             </div>
@@ -148,7 +148,7 @@ export default {
             <div class="my-form-group">
               <label>Kategori</label>
               <select id="category" class="swal2-input">
-                <option value="salad" ${produk.category === "salad" ? "selected" : ""}>Salad</option>
+                <option value="makanan" ${produk.category === "makanan" ? "selected" : ""}>Makanan</option>
                 <option value="aksesoris" ${produk.category === "aksesoris" ? "selected" : ""}>Aksesoris</option>
               </select>
             </div>
@@ -196,9 +196,7 @@ export default {
       if (method === "PUT") formData.append("_method", "PUT");
 
       try {
-        await api.post(url, formData, {
-          headers: { "Content-Type": "multipart/form-data" }
-        });
+        await api.post(url, formData);
 
         Swal.fire({
           icon: "success",

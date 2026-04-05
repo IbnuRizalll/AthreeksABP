@@ -11,7 +11,7 @@
     <main class="shell-content orders-content">
       <section class="orders-header">
         <span class="section-eyebrow">Pesanan</span>
-        <h1 class="section-title">Kelola pesanan pelanggan dengan informasi yang mudah dipantau.</h1>
+        <h1 class="section-title">Pemrosesan pesanan pelanggan.</h1>
       </section>
 
       <div v-if="isLoading" class="surface-card loading-state">Sedang memuat data pesanan...</div>
