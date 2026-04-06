@@ -13,7 +13,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description');
             $table->integer('price');
-            $table->enum('category', ['salad', 'aksesoris']);
+            $table->enum('category', ['makanan', 'aksesoris']);
             $table->string('image_path')->nullable();
             $table->timestamps();
         });
