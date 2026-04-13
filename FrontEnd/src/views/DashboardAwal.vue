@@ -84,6 +84,15 @@ export default {
 </script>
 
 <style scoped>
+
+.hero-section {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255,180,150,0.1) 0%, rgba(255,220,180,0.1) 100%);
+  border-radius: 20px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+}
+
 .landing-main {
   padding: 36px 0 72px;
   display: grid;
@@ -228,3 +237,6 @@ export default {
   }
 }
 </style>
+
+
+
